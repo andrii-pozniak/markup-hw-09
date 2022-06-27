@@ -1,0 +1,87 @@
+.hero {
+    
+    height: 400px;
+   @include padinAuto;
+    @include padinTopBot (118px);
+    background-color: $button-color;
+      background-image: linear-gradient(to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url(../img/small/header_sm.jpg);
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: linear-gradient(to right,
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                url(../img/small/header_sm@2x.jpg);
+        }
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    color: $white-color;
+    text-align: center;
+    &-title {
+        
+        max-width: 360px;
+        margin-top: 0;
+        margin-bottom: 30px;
+        @include padinAuto;
+    
+        font-style: normal;
+        font-weight: 900;
+        font-size: 22px;
+        line-height: 1.62;
+                
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        
+        @media screen and (min-width: 450px) {
+            font-size: 26px;
+        }
+        @media screen and (min-width: 1200px){
+            max-width: 696px;
+                font-size: 44px;
+                line-height: 1.36;
+        }
+    }   
+   @media screen and (min-width: 767px) {
+       
+        
+        background-image: linear-gradient(to right,
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                url(../img/midl/header_md.jpg);
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            background-image: linear-gradient(to right,
+                        rgba(47, 48, 58, 0.4),
+                        rgba(47, 48, 58, 0.4)),
+                    url(../img/midl/header_md@2x.jpg);
+            }
+    }
+    
+   @media screen and (min-width: 1200px) {
+        height: 600px;
+        @include padinTopBot (200px);
+        max-width: 1600px;
+        background-image: linear-gradient(to right,
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                url(../img/lag/header_lg.jpg);
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            background-image: linear-gradient(to right,
+                        rgba(47, 48, 58, 0.4),
+                        rgba(47, 48, 58, 0.4)),
+                    url(../img/lag/header_lg@2x.jpg);
+            }
+        }
+            &-title {
+            
+            }
+    }    
+    

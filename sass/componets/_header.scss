@@ -1,0 +1,205 @@
+.header {
+    position: relative;    
+    
+    
+    border: 1px solid #ECECEC;
+    background-color: $white-color;
+   
+    
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    .adress {
+            margin: 0;    
+            &-li, &-phone {
+               
+                transition: color 250ms $timing-function, fill 250ms $timing-function;
+    
+                color: $primery-text-color;
+                text-decoration: none;
+    
+                &:hover,
+                &:focus {
+                    color: $acsent-color;
+                    fill: $acsent-color;
+                }    
+    
+            }
+        }    
+        .item+.item {
+            margin-left: 50px;
+        }    
+        .link {
+            position: relative;
+            @include padinTopBot (32px);
+            transition: color 250ms $timing-function;
+    
+            color: $title-color;
+            text-decoration: none;         
+            &:hover,
+            &:focus {
+                color: $acsent-color;
+            }    
+            &.current {
+                position: relative;
+                text-decoration: none;
+                color: $acsent-color;
+                padding-bottom: 32px;
+                &::after {
+                        content: "";
+                        position: absolute;
+                        display: inline-block;
+                        left: 0;
+                        bottom: 0;
+                
+                        width: 100%;
+                        height: 4px;
+                        border: 2px;
+                
+                        background-color: $acsent-color;                        
+        
+                }
+       
+             }
+        }
+      
+        
+    .nav {
+        display: flex;        
+        &-site {
+            display: none;    
+        }    
+        &-auto {
+            display: none;    
+        }
+    }
+     
+    @media screen and (min-width: 767px) {
+        
+        
+        .nav {
+            display: flex;
+            align-items: center;
+            &-site {
+                display: flex;
+                margin-left: 88px;                    
+            }            
+            &-auto {
+                display: flex;
+                margin-left: auto;
+                flex-direction: column;       
+                justify-content: center;
+                    
+            }
+        }
+        .link {
+           display: flex;
+           align-items: center;
+            @include padinTopBot (32px);
+          
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 1.2;
+            letter-spacing: 0.02em;
+        }
+        
+        .adress {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            font-weight: 500;
+                font-size: 12px;
+                line-height: 1.2;
+            
+                letter-spacing: 0.02em;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            &-svg {
+                width: 14px;
+                height: 14px;
+                margin-right: 8px;
+        
+            color: $primery-text-color;
+            }
+            &-li {               
+                padding-top: 21px;
+                
+            }
+            &-phone {
+                padding-bottom: 21px;
+            }
+        
+        }
+        .item { 
+                     
+            padding: 0;
+        }
+    }
+    
+    @media screen and (min-width: 1200px) {               
+        .nav {
+            &-site {                   
+                margin-left: 93px;
+            }
+            &-auto {
+            display: flex;
+            flex-direction: row;
+            margin: 0;
+            margin-left: auto;
+           
+                                  
+            }
+        }
+       
+        .nav-phone {
+        @include padinTopBot (32px);
+        }
+        .adress {
+            margin-bottom: 0;
+            margin-right: 30px;
+            margin-left: auto;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 1.2;
+            letter-spacing: 0.02em;
+           
+            &:last-child {
+                margin-right: 0;
+           
+            }
+            &-svg {
+                width: 16px;
+                height: 16px;
+                margin-right: 10px;
+                
+                color: $primery-text-color;
+            }
+            &-li {
+                @include padinTopBot (32px);
+                margin-right: 10px;
+                &:last-child {
+                    margin-right: 0;
+
+                }
+               
+            }
+             &-phone {
+                @include padinTopBot (32px);
+            }
+                
+        }
+       
+    }        
+}
+.icon-cross {
+    @media screen and (min-width: 767px) {
+        width: 19px;
+        height: 19px;
+        margin-left: auto;
+    }
+    width: 19px;
+    height: 19px;
+    margin-left: auto;
+}

@@ -1,0 +1,37 @@
+$primery-text-color:#757575;
+$title-color: #212121;
+$acsent-color: #2196F3;
+$white-color: #FFFF;
+$background-color: #F5F4FA;
+$button-color: #2F303A;
+$icon-color: #AFB1B8;
+$timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+$size: 24px;
+@mixin displayFlex () {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+@mixin margin() {
+    margin-bottom: 30px;
+    margin-right: 30px;
+    
+}
+@mixin padinTablet {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+@mixin padinDestop {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+@mixin padinAuto {
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+@mixin padinTopBot ($size) {
+    padding-top: $size;
+        padding-bottom: $size;
+}

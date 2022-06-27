@@ -1,0 +1,143 @@
+.container {
+  
+    padding-left: 15px;
+    padding-right: 15px;
+    @include padinAuto;
+    @media screen and (min-width: 480px) {
+       width: 480px;
+    }
+    @media screen and (min-width: 767px) {
+        width: 768px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+    }
+    &-header {
+        
+        
+        @media screen and (min-width: 767px) {                
+            display: flex;               
+        }
+        
+         @media screen and (min-width: 1200px) {               
+            display: flex;
+            align-items: center;
+                     
+        }
+        
+    }
+    &-hero {
+        @media screen and (min-width: 480px) {
+                width: 100%;
+            }
+        
+            @media screen and (min-width: 767px) {
+                width: 100%;
+            }
+        
+            @media screen and (min-width: 1200px) {
+                width: 100%;
+            }
+    }
+    &-features {
+       
+        @media screen and (min-width: 767px) {
+            @include displayFlex;
+            align-items: baseline;
+            margin: -15px;
+            
+           
+        }
+        
+        @media screen and (min-width: 1200px) {
+           display: flex;
+           flex-wrap: nowrap;
+           
+            
+        }
+        
+      
+    }
+    &-work {
+        @media screen and (min-width: 480px) {
+            display: none;
+        }
+        
+        @media screen and (min-width: 767px) {
+            display: none;
+        }
+        
+        @media screen and (min-width: 1200px) {
+            display: flex;
+            justify-content: center;
+            
+        }
+    }       
+        
+    &-customer {
+        @include padinAuto;
+    }
+   &-team {
+        @include padinAuto;
+        margin-top: 0;
+        margin-bottom: 0;
+        @media screen and (min-width: 767px) {
+           display: flex;
+           flex-wrap: wrap;
+           margin: -15px;
+
+            padding: 0;
+          
+            
+        }
+    
+        @media screen and (min-width: 1200px) {
+            display: flex;            
+            justify-content: center;
+               
+        }
+        
+    }
+    &-hooter {
+       @media screen and (min-width:767px) {
+        @include displayFlex;
+        align-items: baseline;
+        justify-content: space-around;
+
+       }
+        @media screen and (min-width:1200px) {
+            justify-content: center;
+            flex-wrap: nowrap;
+           
+        }       
+    }
+    &-adress {
+        margin-bottom: 60px;
+        
+        @media screen and (min-width:1200px) {
+                display: inline;
+                flex-direction: column;
+                
+               
+            }
+        @media screen and (min-width:767px) {
+            display: inline;
+            margin-bottom: 0;
+        }
+        
+    }
+    &-modal {
+        position: relative;
+        margin-bottom: 10px;
+    }
+    &-form {
+        @include padinAuto;
+        margin-top: 60px;
+        @media screen and (min-width:767px) {
+            margin-left: auto;
+        }
+        @media screen and (min-width:1200px) {
+            margin-top: 0;
+        }
+    }
+}

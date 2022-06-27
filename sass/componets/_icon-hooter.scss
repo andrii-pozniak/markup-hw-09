@@ -1,0 +1,50 @@
+.icon {
+    margin-left: 70px;
+
+    &-title {
+        margin-top: 0;
+        margin-bottom: 20px;
+
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.2;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+
+        color: $white-color;
+    }
+
+    &-hooter {
+        display: flex;
+    }
+
+    &-li {
+        display: flex;
+    }
+    &-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: background-color 250ms $timing-function;
+
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.1);
+        fill: $white-color;
+    }
+    &-svg {
+        width: 20px;
+        height: 20px;
+
+        fill: $white-color;
+    }
+}
+.adress-container {
+    margin-left: 70px;
+}
+.icon-li+.icon-li {
+    margin-left: 10px;
+}
+

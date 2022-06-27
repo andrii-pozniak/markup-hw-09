@@ -1,0 +1,188 @@
+.page {
+    @include padinTopBot (60px);
+   
+    @include padinAuto;
+    
+    font-family: 'Roboto';
+    font-size: 16px;
+    &-work:nth-child(-n+3) {
+            margin-bottom: 15px;
+        }
+      
+    @media screen and (min-width: 767px) {
+       
+        &-work:not(:last-child){
+            margin-bottom: 0;
+        }
+    }    
+    @media screen and (min-width: 1200px) {
+       @include padinTopBot (94px) 
+    }
+    &-nav {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+        
+        @media screen and (min-width: 767px) {            
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+         }
+         @media screen and (min-width: 1200px) {
+            margin-bottom: 50px;
+         }      
+    }       
+}
+.page-work+.page-work {
+    margin-left: 8px;
+}
+
+.photo {    
+        margin: -15px;
+    
+        font-size: 16px;
+        line-height: 1.88;
+        letter-spacing: 0.03em;
+        text-align: center;
+    
+        color: $primery-text-color;
+        @media screen and (min-width: 767px) {
+            display: flex;        
+            flex-wrap: wrap;
+                      
+        }
+    &-item {
+        margin: 15px;
+        
+        @media screen and (min-width:767px) {           
+            width: calc((100% - 60px)/2);                  
+        }
+        @media screen and (min-width:1200px) {
+                width: calc((100% - 90px)/3);                             
+            }
+        }
+    &-a {
+        position: relative;
+        
+       
+        text-decoration: none;
+        transition: box-shadow 250ms $timing-function;
+        &:hover, &:focus {
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+            0px 4px 4px rgba(0, 0, 0, 0.06),
+            1px 4px 6px rgba(0, 0, 0, 0.16);
+        }
+        @media screen and (min-width:767px) {
+            display: flex;
+            flex-direction: column;
+            
+            height: 100%;
+            
+        }
+        
+    }
+    &-img {
+        display: flex;
+        margin-bottom: 0;
+        width: 100%;
+        overflow: hidden;
+        @media screen and (min-width:767px) {
+            width: 100%;
+            height: 100%;
+        }
+    }    
+    &-text {
+        margin-top: 0;
+        margin-bottom: 0;
+        
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.88;
+        letter-spacing: 0.03em;
+        text-align: left;
+        
+        color: $primery-text-color;
+        
+        
+    }
+}
+
+.overlay {
+    position: relative;
+    overflow: hidden;
+    &-text {
+        position: absolute;
+        overflow: scroll;
+        
+        width: 100%;
+        height: 100%;
+        padding: 63px 24px;
+        margin-top: 0;
+        margin-bottom: 0;
+        top: 0;
+        left: 0;
+        
+        transform: translateY(101%);
+        transition: transform 250ms $timing-function;
+        
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.56;
+        letter-spacing: 0.03em;
+        
+        
+        color: $white-color;
+        background: rgba(33, 150, 243, 0.9);
+    }
+}
+.overlay:hover .overlay-text {
+    transform: translateY(0);
+}
+.photo-a:focus .overlay-text {
+    transform: translateY(0);
+}
+.text-container {
+    margin-bottom: 0;
+    padding: 24px 20px;
+   
+    border: 1px solid #EEEEEE;
+    @media screen and (min-width:767px) {
+        flex-grow: 1;         
+    }
+}
+.title {
+    margin: 0;
+    margin-bottom: 4px;
+    
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    text-align: left;
+
+    color: $title-color;
+   
+}
+.text-overlay {
+    position: absolute;
+
+    width: 100%;
+    height: 295px;
+    padding: 63px 24px;
+    margin-top: 0;
+    margin-bottom: 0;
+    top: 0;
+    left: 0;
+
+    transform: translateY(100%);
+    transition: transform 250ms $timing-function;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+
+
+    color: $white-color;
+    background: rgba(33, 150, 243, 0.9);
+}

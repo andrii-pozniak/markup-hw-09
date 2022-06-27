@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework-1</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+
+<body>
+    <!--Шапка сайта-->
+    <header class="header">
+        <div class="container">
+            <div class="container-header">
+                <nav class="nav">
+                    <a href="./site.html" class="logo" lang="en"><span class="logo-blue">Web</span>Studio</a>
+                    <button type="button" class="menu-toggle js-open-menu" aria-expanded="false"
+                        aria-controls="mobile-menu">
+                        <svg width="24" height="16">
+                            <use class="icon-cross" href="./img/logo company/sprite.svg#icon-close-black"></use>
+                            <use class="icon-menu" href="./img/logo company/sprite.svg#icon-menu_24px"> </use>
+                        </svg>
+                    </button>
+                    <ul class="nav-site list">
+                        <li class="item"> <a href="./index.html" class="link">Студия</a></li>
+                        <li class="item"> <a href="./portfolio.html" class="link current">Портфолио</a></li>
+                        <li class="item"> <a href="" class="link">Контакты</a></li>
+                    </ul>
+                </nav>
+                <ul class="nav-auto list">
+                    <li class="adress">
+    
+                        <a href="info@devstudio.com" class="adress-li">
+                            <svg class="adress-svg">
+                                <use href="./img/logo company/sprite.svg#icon-envelope"></use>
+                            </svg>
+                            info@devstudio.com</a>
+                    </li>
+                    <li class="nav-phone">
+    
+                        <a href="tel:+380961111111" class="adress-li">
+                            <svg class="adress-svg">
+                                <use href="./img/logo company/sprite.svg#icon-Vector"></use>
+                            </svg>
+                            +38 (096) 111 11 11</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    
+    </header>
+     <main >
+        <section class="page">                   
+             <div class="container">   
+                <h1 class="hide">works</h1>
+                <ul class="page-nav list">
+                    <li class="page-work"><button type="button" class="button-all">Все</button></li>
+                    <li class="page-work"><button type="button" class="button-port">Веб-сайты</button></li>
+                    <li class="page-work"><button type="button" class="button-port">Приложения</button></li>
+                    <li class="page-work"><button type="button" class="button-port">Дизайн</button></li>
+                    <li class="page-work"><button type="button" class="button-port">Маркетинг</button></li>
+                </ul>
+                
+                <ul class="photo list">
+                    <li class="photo-item">                       
+                          
+                                <a href="" class="photo-a">                               
+                                  <div class="overlay">
+                                    <picture>
+                                                         
+                                        <source media="(min-width: 1200px)" srcset="./img/photo1/img1_lg.jpg 1x, ./img/photo1/img1_lg@2x.jpg 2x"  type="image/jpg" >
+                                        <source media="(min-width: 768px)" srcset="./img/photo1/img1_md.jpg 1x, ./img/photo1/img1_md@2x.jpg 2x"  type="image/jpg" >
+                                        <source media="(max-width: 767px)" srcset="./img/photo1/img1_sm.jpg 1x, ./img/photo1/img1_sm@2x.jpg 2x" type="image/jpg">
+                                    
+                                        <img src="./img/photo1/img1_sm.jpg" class="photo-img" alt="Технокряк" >
+                                    </picture>
+                                    
+                                    <p class="overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
+                                        Все это
+                                        позволит посетителю получить
+                                        исчерпывающие сведения о компании или частном лице.</p>
+                                  </div>
+                                        
+                                        <div class="text-container">
+                                            <h2 class="title">Технокряк</h2>
+                                            <p class="photo-text">Веб-сайт</p>                                            
+                                        
+                                        </div> 
+                                
+                                </a>
+                                               
+                        
+                    </li>
+                    <li class="photo-item">
+                        <a href="" class="photo-a" >
+                            <div class="overlay">
+                                <picture>
+                                   
+                                    <source media="(min-width: 1200px)" srcset="./img/photo2/img2_lg.jpg 1x, ./img/photo2/img2_lg@2x.jpg 2x"
+                                        type="image/jpg" />
+                                    <source media="(min-width: 768px)" srcset="./img/photo2/img2_md.jpg 1x, ./img/photo2/img2_md@2x.jpg 2x"
+                                        type="image/jpg" />
+                                    <source media="(max-width: 767px)" srcset="./img/photo2/img2_sm.jpg 1x, ./img/photo2/img2_sm@2x.jpg 2x"
+                                        type="image/jpg" />
+                                
+                                    <img src="./img/photo2/img2_sm.jpg" class="photo-img" alt="Постер New Orlean vs Golden Star" >
+                                </picture>
+                                
+                                <p class="overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
+                                    позволит посетителю
+                                    получить
+                                    исчерпывающие сведения о компании или частном лице.</p>
+                            </div>
+                            <div class="text-container">
+                                <h2 class="title">Постер <span lang="en">New Orlean vs Golden Star</span> </h2>
+                                <p class="photo-text">Дизайн</p> 
+                                
+                            </div>
+                        </a>                      
+                
+                    </li>
+                    <li class="photo-item">
+                        <a href="" class="photo-a" >
+                            <div class="overlay">
+                                <picture>
+                                 
+                                    <source media="(min-width: 1200px)" srcset="./img/photo3/img3_lg.jpg 1x, ./img/photo3/img3_lg@2x.jpg 2x"
+                                        type="image/jpg" />
+                                    <source media="(min-width: 768px)" srcset="./img/photo3/img3_md.jpg 1x, ./img/photo3/img3_md@2x.jpg 2x"
+                                        type="image/jpg" />
+                                    <source media="(max-width: 767px)" srcset="./img/photo3/img3_sm.jpg 1x, ./img/photo3/img3_sm@2x.jpg 2x"
+                                        type="image/jpg" />
+                                
+                                    <img src="./img/photo2/img3_sm.jpg" class="photo-img" alt="Ресторан Seafood" >
+                                </picture>
+                               
+                                <p class="overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
+                                    позволит посетителю получить
+                                    исчерпывающие сведения о компании или частном лице.</p>
+                            </div>
+                            <div class="text-container">
+                                <h2 class="title">Ресторан <span lang="en">Seafood</span></h2>
+                                <p class="photo-text">Приложение</p>
+                                
+                            </div>
+                        </a>                      
+                
+                    </li>
+                    <li class="photo-item">
+                        <a href="" class="photo-a" >
+                            <div class="overlay">
+                                <picture>
+                                    
+                                    <source media="(min-width: 1200px)" srcset="./img/photo4/img4_lg.jpg 1x, ./img/photo4/img4_lg@2x.jpg 2x"
+                                        type="image/jpg" />
+                                    <source media="(min-width: 768px)" srcset="./img/photo4/img4_md.jpg 1x, ./img/photo4/img4_md@2x.jpg 2x"
+                                        type="image/jpg" />
+                                    <source media="(max-width: 767px)" srcset="./img/photo4/img4_sm.jpg 1x, ./img/photo4/img4_sm@2x.jpg 2x"
+                                        type="image/jpg" />
+                                
+                                    <img src="./img/photo4/img4_sm.jpg" class="photo-img" alt="Проект Prime" >
+                                </picture>
+                                
+                                <p class="overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
+                                    позволит посетителю получить
+                                    исчерпывающие сведения о компании или частном лице.</p>
+                            </div>
+                            <div class="text-container">
+                                <h2 class="title">Проект <span lang="en">Prime</span></h2>
+                                <p class="photo-text">Маркетинг</p>                                
+                            
+                            </div>
+                        </a>
+                       
+                
+                    </li>
+                    <li class="photo-item">
+                        <a href="" class="photo-a" >
+                            <div class="overlay">
+                                <picture>
+                             
+                                    <source media="(min-width: 1200px)" srcset="./img/photo5/img5_lg.jpg 1x, ./img/photo5/img5_lg@2x.jpg 2x"
+                                        type="image/jpg" />
+                                    <source media="(min-width: 768px)" srcset="./img/photo5/img5_md.jpg 1x, ./img/photo5/img5_md@2x.jpg 2x"
+                                        type="image/jpg" />
+                                    <source media="(max-width: 767px)" srcset="./img/photo5/img5_sm.jpg 1x, ./img/photo5/img5_sm@2x.jpg 2x"
+                                        type="image/jpg" />
+                                
+                                    <img src="./img/photo5/img5_sm.jpg" class="photo-img" alt="Проект Prime" >
+                                </picture>
+                                
+                                <p class="overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
+                                    позволит посетителю получить
+                                    исчерпывающие сведения о компании или частном лице.</p>
+                            </div>
+                            <div class="text-container">
+                                <h2 class="title">Проект <span lang="en">Boxes</span> </h2>
+                                <p class="photo-text">Приложение</p>
+                                
+                            </div>
+                        </a>               
+                
+                    </li>
+                    <li class="photo-item">
+                        <a href="" class="photo-a" >
+                           <div class="overlay">
+                                <picture>
+                                  
+                                    <source media="(min-width: 1200px)" srcset="./img/photo6/img6_lg.jpg 1x, ./img/photo6/img6_lg@2x.jpg 2x"
+                                        type="image/jpg" />
+                                    <source media="(min-width: 768px)" srcset="./img/photo6/img6_md.jpg 1x, ./img/photo6/img6_md@2x.jpg 2x"
+                                        type="image/jpg" />
+                                    <source media="(max-width: 767px)" srcset="./img/photo6/img6_sm.jpg 1x, ./img/photo6/img6_sm@2x.jpg 2x"
+                                        type="image/jpg" />
+                                
+                                    <img src="./img/photo6/img6_sm.jpg" class="photo-img" alt="Inspiration has no Borders" >
+                                </picture>
+                               
+                                <p class="overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
+                                    позволит посетителю
+                                    получить
+                                    исчерпывающие сведения о компании или частном лице.</p>
+                           </div>
+                            <div class="text-container">
+                                <h2 lang="en" class="title">Inspiration has no Borders</h2>
+                                <p class="photo-text">Веб-сайт</p>
+                                
+                            </div>
+                        </a>                                       
+                    </li>
+                    <li class="photo-item">
+                        <a href="" class="photo-a" >
+                            <div class="overlay">
+                                <picture>
+                                   
+                                    <source media="(min-width: 1200px)" srcset="./img/photo7/img7_lg.jpg 1x, ./img/photo7/img7_lg@2x.jpg 2x"
+                                        type="image/jpg" />
+                                    <source media="(min-width: 768px)" srcset="./img/photo7/img7_md.jpg 1x, ./img/photo7/img7_md@2x.jpg 2x"
+                                        type="image/jpg" />
+                                    <source media="(max-width: 767px)" srcset="./img/photo7/img7_sm.jpg 1x, ./img/photo7/img7_sm@2x.jpg 2x"
+                                        type="image/jpg" />
+                                
+                                    <img src="./img/photo7/img7_sm.jpg" class="photo-img" alt="Издание Limited Editions" >
+                                </picture>
+                                
+                                <p class="overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
+                                    позволит посетителю получить
+                                    исчерпывающие сведения о компании или частном лице.</p>
+                            </div>
+                            <div class="text-container">
+                                <h2 class="title">Издание <span lang="en">Limited Edition</span></h2>
+                                <p class="photo-text">Дизайн</p>                               
+                            
+                            </div>
+                        </a>
+                        
+                
+                    </li>
+                    <li class="photo-item">
+                       <a href="" class="photo-a" >
+                            <div class="overlay">
+                                <picture>
+                                  
+                                    <source media="(min-width: 1200px)" srcset="./img/photo8/img8_lg.jpg 1x, ./img/photo8/img8_lg@2x.jpg 2x"
+                                        type="image/jpg" />
+                                    <source media="(min-width: 768px)" srcset="./img/photo8/img8_md.jpg 1x, ./img/photo8/img8_md@2x.jpg 2x"
+                                        type="image/jpg" />
+                                    <source media="(max-width: 767px)" srcset="./img/photo8/img8_sm.jpg 1x, ./img/photo8/img8_sm@2x.jpg 2x"
+                                        type="image/jpg" />
+                                
+                                    <img src="./img/photo8/img8_sm.jpg" class="photo-img" alt="Проект LAB" >
+                                </picture>
+                                
+                                <p class="overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
+                                    позволит посетителю получить
+                                    исчерпывающие сведения о компании или частном лице.</p>
+                            </div>
+                            <div class="text-container">
+                                <h2 class="title">Проект <span lang="en">LAB</span> </h2>
+                                <p class="photo-text">Маркетинг</p>                               
+                            
+                            </div>
+                       </a>
+                
+                    </li>
+                    <li class="photo-item">
+                       <a href="" class="photo-a" >
+                            <div class="overlay">
+                                <picture>
+                                   
+                                    <source media="(min-width: 1200px)" srcset="./img/photo9/img9_lg.jpg 1x, ./img/photo9/img9_lg@2x.jpg 2x"
+                                        type="image/jpg" />
+                                    <source media="(min-width: 768px)" srcset="./img/photo9/img9_md.jpg 1x, ./img/photo9/img9_md@2x.jpg 2x"
+                                        type="image/jpg" />
+                                    <source media="(max-width: 767px)" srcset="./img/photo9/img9_sm.jpg 1x, ./img/photo9/img9_sm@2x.jpg 2x"
+                                        type="image/jpg" />
+                                
+                                    <img src="./img/photo9/img9_sm.jpg" class="photo-img" alt="Growing Business" >
+                                </picture>
+                                
+                                <p class="overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
+                                    позволит посетителю
+                                    получить
+                                    исчерпывающие сведения о компании или частном лице.</p>
+                            </div>
+                            <div class="text-container">
+                                <h2 lang="en" class="title">Growing Business</h2>
+                                <p class="photo-text">Приложение</p>
+                                
+                            </div>
+                       </a>
+                
+                    </li>
+                </ul>
+             </div>    
+        </section>       
+
+    </main>
+
+    <!--Footer-->
+    <footer class="hooter">
+        <div class="container">
+            <div class="container-hooter">
+                <div class="container-adress">
+                    <a href="./site.html" class="hooter-logo" lang="en"><span class="logo-blue">Web</span>Studio</a>
+                    <address class="hooter-adress">
+                        <p class="hooter-text">г. Киев, пр-т Леси Украинки, 26</p>
+                        <ul class="list">
+                            <li class="hooter-item">
+                                <a href="info@example.com" class="hooter-link">info@example.com</a>
+                            </li>
+                            <li class="hooter-item">
+                                <a href="+380991111111" class="hooter-link">+38 099 111 11 11</a>
+                            </li>
+                        </ul>
+    
+                    </address>
+                </div>
+                <div class="hooter-icon">
+                    <p class="hooter-title">Присоединяйтесь</p>
+                    <ul class="hooter-list list">
+                        <li class="hooter-li">
+                            <a href="" class="icon-logo"> <svg class="icon-svg">
+                                    <use href="./img/icons/sprite.svg#icon-instagram"></use>
+                                </svg></a>
+                        </li>
+                        <li class="hooter-li">
+                            <a href="" class="icon-logo"> <svg class="icon-svg">
+                                    <use href="./img/icons/sprite.svg#icon-twitter"></use>
+                                </svg></a>
+                        </li>
+                        <li class="hooter-li">
+                            <a href="" class="icon-logo"> <svg class="icon-svg">
+                                    <use href="./img/icons/sprite.svg#icon-facebook"></use>
+                                </svg></a>
+                        </li>
+                        <li class="hooter-li">
+                            <a href="" class="icon-logo"> <svg class="icon-svg">
+                                    <use href="./img/icons/sprite.svg#icon-linkedin"></use>
+                                </svg></a>
+    
+                        </li>
+                    </ul>
+                </div>
+                <div class="hooter-maile">
+                    <p class="hooter-signature">Подпишитесь на рассылку</p>
+                    <form class="form">
+                        <input class="form-input" type="email" name="link" id="link" placeholder="E-mail">
+                        <button class="form-btn" type="submit">Подписаться <svg class="form-svg">
+                                <use href="./img/logo company/sprite.svg#icon-send"></use>
+                            </svg>
+                        </button>
+    
+                    </form>
+                </div>
+            </div>
+    
+        </div>
+    
+    </footer>
+                <div data-modal class="hero-backdrop is-hidden">
+                    <div class="modal">
+                        <button data-modal-close type="button" class="button-modal">
+                            <svg class="modal-svg">
+                                <use href="./img/logo company/sprite.svg#icon-close-black"></use>
+                            </svg>
+                        </button>
+                        <div>
+                            <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+                            <form>
+                                <label class="modal-name" for="fio">Имя</label>
+                                <div class="modal-container">
+                                    <input type="text" name="fio" id="fio" class="modal-input">
+                                    <svg class="modal-card">
+                                        <use href="./img/logo company/sprite.svg#icon-person" class="svg"></use>
+                                    </svg>
+                
+                                </div>
+                
+                                <label class="modal-name" for="phone">Телефон</label>
+                                <div class="container-modal">
+                                    <input type="tel" name="tel" id="phone" class="modal-input">
+                                    <svg class="modal-card">
+                                        <use href="./img/logo company/sprite.svg#icon-phone"></use>
+                                    </svg>
+                
+                                </div>
+                
+                                <label class="modal-name" for="mail">Почта</label>
+                                <div class="modal-container">
+                                    <input type="email" name="mail" id="mail" class="modal-input">
+                                    <svg class="modal-card">
+                                        <use href="./img/logo company/sprite.svg#icon-email"></use>
+                                    </svg>
+                                </div>
+                
+                                <label class="modal-name" for="coment">Комментарий</label>
+                                <textarea name="coment" id="coment" cols="30" rows="10" class="modal-coment"
+                                    placeholder="Введите текст"></textarea>
+                
+                                <label class="checkbox-label">
+                                    <input class="checkbox" type="checkbox" name="checkbox" value="topic">
+                                    <span class="checkbox-icon"></span>Соглашаюсь с рассылкой и принимаю <span> <a href=""
+                                            class="checkbox-item"> Условия договора</a></span>
+                                </label>
+                                <button type="submit" class="button-submit">Отправить</button>
+                
+                
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-container js-menu-container" id="mobile-menu">
+                    <button class="menu-toggle js-close-menu">
+                        <svg class="menu-svg">
+                            <use href="./img/logo company/sprite.svg#icon-close-black"> </use>
+                        </svg>
+                    </button>
+                    <div class="mobile-menu">
+                        <ul class="menu-site list">
+                            <li class="menu-item"> <a href="./index.html" class="menu-link">Студия</a></li>
+                            <li class="menu-item"> <a href="./portfolio.html" class="menu-link current">Портфолио</a></li>
+                            <li class="menu-item"> <a href="" class="menu-link">Контакты</a></li>
+                        </ul>
+                
+                        <div>
+                            <ul class="menu-auto list">
+                                <li class="menu-adress">
+                                    <a href="tel:+380961111111" class="menu-phone">+38 (096) 111 11 11</a>
+                
+                                </li>
+                                <li class="menu-adress">
+                                    <a href="info@devstudio.com" class="menu-mail">info@devstudio.com</a>
+                
+                                </li>
+                            </ul>
+                            <ul class="menu-logo list">
+                                <li class="menu-icon">
+                                    <a href="" class="menu-text">Instagram</a>
+                                </li>
+                                <li class="menu-icon">
+                                    <a href="" class="menu-text">Twitter</a>
+                                </li>
+                                <li class="menu-icon">
+                                    <a href="" class="menu-text">Facebook</a>
+                                </li>
+                                <li class="menu-icon">
+                                    <a href="" class="menu-text">LinkedIn</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+<script src="./js/menu.js"></script>
+<script src="./js/mobile-menu.js"></script>
+
+</body>
+
+</html>

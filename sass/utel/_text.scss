@@ -1,0 +1,39 @@
+.third-text {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: $title-color;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    @media screen and (min-width:1200px) {
+        text-align: left;
+    }
+}
+.p-text {
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 100%;
+    text-align: left;
+
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+.second-title {
+    margin-top: 0;
+    margin-bottom: 30px;
+
+    color: $title-color;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    @media screen and (min-width: 1200px){
+        margin-bottom: 50px;
+    }
+}
