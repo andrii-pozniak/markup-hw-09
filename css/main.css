@@ -2472,6 +2472,20 @@ body {
   color: #D41443;
 }
 
+.modal-number-fio {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 2.0;
+  color: #D41443;
+}
+
+.modal-number-tel {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 2.0;
+  color: #D41443;
+}
+
 .modal-number-food {
   display: -webkit-box;
   display: -ms-flexbox;
