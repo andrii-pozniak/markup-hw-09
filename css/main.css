@@ -2373,7 +2373,7 @@ body {
 .modal-application-logo {
   margin-right: 20px;
   width: 80%;
-  height: 80px;
+  height: 40px;
   fill: #D41443;
 }
 
@@ -2383,7 +2383,7 @@ body {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  padding: 40px;
+  padding: 20px 40px;
   background-color: #FFF5F6;
   border-radius: 10px;
   width: 98vw;
@@ -2395,19 +2395,12 @@ body {
 .modal-application-title {
   margin: 0;
   padding-bottom: 10px;
-  margin-bottom: 10px;
   border-bottom: 1px solid #ECECEC;
   font-style: normal;
-  font-weight: 500;
-  font-size: 34px;
+  font-weight: 700;
+  font-size: 26px;
   line-height: 1.16;
   color: #D41443;
-}
-
-@media screen and (min-width: 350px) {
-  .modal-application-title {
-    font-size: 38px;
-  }
 }
 
 .modal-application-text {
@@ -2440,13 +2433,9 @@ body {
 }
 
 .modal-number {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  /*display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;*/
   padding-bottom: 10px;
   margin-bottom: 10px;
   border-bottom: 1px solid #ECECEC;
@@ -2454,7 +2443,7 @@ body {
 
 .modal-number-input {
   width: 100px;
-  height: 40px;
+  height: 30px;
   padding-left: 25px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   padding: 0;
@@ -2462,8 +2451,8 @@ body {
 
 .modal-number-name {
   width: 100%;
-  height: 40px;
-  margin-bottom: 10px;
+  height: 30px;
+  margin-bottom: 5px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   padding: 0;
   font-weight: 500;
@@ -2473,16 +2462,16 @@ body {
 }
 
 .modal-number-fio {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 2.0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.2;
   color: #D41443;
 }
 
 .modal-number-tel {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 2.0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.2;
   color: #D41443;
 }
 
@@ -2518,12 +2507,12 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .modal-enter-input {
   width: 50%;
-  height: 40px;
+  height: 30px;
   padding-left: 25px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   padding: 0;
@@ -2535,7 +2524,7 @@ body {
 
 .modal-enter-count {
   width: 70%;
-  height: 40px;
+  height: 30px;
   padding: 0;
   font-weight: 500;
   font-size: 16px;
@@ -2579,10 +2568,54 @@ body {
   color: #D41443;
 }
 
+.modal-enter-text {
+  margin: 0;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.0;
+  color: #D41443;
+}
+
+.modal-enter-btn {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.0;
+  color: #D41443;
+}
+
 .quantity {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.modal-name {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.0;
+  color: #D41443;
+}
+
+.modal-name-comment {
+  resize: none;
+  width: 90%;
+  height: 60px;
+  font-weight: 400;
+  padding: 12px 16px;
+  margin-bottom: 5px;
+  outline: none;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.15;
+  letter-spacing: 0.01em;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.modal-name-comment:hover, .modal-name-comment:focus {
+  border-color: #2196F3;
+  color: #212121;
 }
 
 .payment {
@@ -2591,15 +2624,15 @@ body {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .payment-svg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 60px;
-  width: calc((100% - 100px) / 2);
+  height: 32px;
+  width: 32px;
 }
 
 .payment-label {
@@ -2613,7 +2646,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 16px;
   line-height: 2.0;
@@ -2622,8 +2655,8 @@ body {
 
 .payment-input {
   width: 100%;
-  height: 40px;
-  margin-top: 10px;
+  height: 30px;
+  margin-top: 5px;
   padding: 0;
   border: 1px solid rgba(33, 33, 33, 0.2);
   font-weight: 700;
@@ -2659,16 +2692,18 @@ body {
 }
 
 .btn-enter {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   padding: 0;
 }
 
 .btn-submit {
   width: 100%;
-  height: 60px;
+  height: 50px;
   margin-bottom: 10px;
   border-radius: 60px;
+  margin-left: auto;
+  margin-right: auto;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -2685,11 +2720,11 @@ body {
 
 .btn-сontinue {
   width: 100%;
-  height: 60px;
+  height: 50px;
   border-radius: 60px;
   font-style: normal;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.15;
   text-transform: uppercase;
   background-color: #FFFFFF;

@@ -18,7 +18,7 @@
     &-logo {
         margin-right: 20px;
         width: 80%;
-        height: 80px;
+        height: 40px;
         fill: #D41443;
 
     }
@@ -27,7 +27,7 @@
             top: 50%;
             left: 50%;
         transform: translate(-50%, -50%);
-        padding: 40px;
+        padding:20px 40px;
         background-color: #FFF5F6;
         border-radius: 10px;
         width: 98vw;
@@ -39,18 +39,16 @@
     &-title {
         margin: 0;
         padding-bottom: 10px;
-        margin-bottom: 10px;
+        
         
         border-bottom: 1px solid #ECECEC;
 
         font-style: normal;
-        font-weight: 500;
-        font-size: 34px;
+        font-weight: 700;
+        font-size: 26px;
         line-height: 1.16;
         color: #D41443;
-       @media screen and (min-width: 350px) {
-            font-size: 38px;
-        }     
+           
     }
     &-text {
    
@@ -77,15 +75,15 @@
     }   
 }
 .modal-number {
-    display: flex;
+    /*display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-around;*/
     padding-bottom: 10px;
     margin-bottom: 10px;
     border-bottom: 1px solid #ECECEC;
     &-input {
         width: 100px;
-        height: 40px;
+        height: 30px;
         padding-left: 25px;
         
         border: 1px solid rgba(33, 33, 33, 0.2);
@@ -93,8 +91,8 @@
     }
         &-name {   
             width: 100%;
-            height: 40px;
-            margin-bottom: 10px;           
+            height: 30px;
+            margin-bottom: 5px;           
     
             border: 1px solid rgba(33, 33, 33, 0.2);
             padding: 0;
@@ -106,17 +104,18 @@
     
         }
         &-fio {
-        font-weight: 500;
-            font-size: 16px;
-            line-height: 2.0;
+        font-weight: 400;
+            font-size: 12px;
+            line-height: 1.2;
             color: #D41443;
         }
         &-tel {
-        font-weight: 500;
-            font-size: 16px;
-            line-height: 2.0;
+        font-weight: 400;
+            font-size: 12px;
+            line-height: 1.2;
             color: #D41443;
         }
+       
 
     &-food {
         display: flex;
@@ -144,11 +143,11 @@
 }
 .modal-enter {
     display: flex;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
    
     &-input {   
         width: 50%;
-        height: 40px;
+        height: 30px;
         padding-left: 25px;
     
         border: 1px solid rgba(33, 33, 33, 0.2);
@@ -161,7 +160,7 @@
     }   
     &-count {
         width: 70%;
-        height: 40px;
+        height: 30px;
         padding: 0;
         font-weight: 500;
         font-size: 16px;
@@ -192,24 +191,70 @@
         line-height: 2.0;
         color: #D41443;
     }
+     &-text {
+        margin: 0;
+            font-weight: 500;
+                font-size: 12px;
+                line-height: 2.0;
+                color: #D41443;
+        }
+        &-btn {
+        font-weight: 500;
+            font-size: 12px;
+            line-height: 2.0;
+            color: #D41443;
+        }
 }
 .quantity {
     display: flex;
-    &-svg {
-        
-       
-    }
+    
 }
+.modal-name {
+    font-weight: 500;
+        font-size: 12px;
+        line-height: 2.0;
+        color: #D41443;
+        &-comment {
+            resize: none;
+                width: 90%;
+                height: 60px;
+                font-weight: 400;
+            
+                padding: 12px 16px;
+                margin-bottom: 5px;
+                outline: none;
+            
+            
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 1.15;
+                letter-spacing: 0.01em;
+            
+                border: 1px solid rgba(33, 33, 33, 0.2);
+                border-radius: 4px;
+                color: rgba(117, 117, 117, 0.5);
+            
+                &:hover,
+                &:focus {
+                    border-color: $acsent-color;
+                    color: $title-color;
+                }
+                    
+
+        }
+
+}
+
 .payment {
     display: flex;
     justify-content: space-around; 
-    margin-bottom: 10px;
+    margin-bottom: 5px;
      
     &-svg{
         display: flex;
-        height: 60px;
+        height: 32px;
         
-        width: calc((100% - 100px) / 2);
+        width: 32px
         
 
     }
@@ -217,7 +262,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         font-weight: 700;
         font-size: 16px;
         line-height: 2.0;
@@ -227,8 +272,8 @@
     }
     &-input {
         width: 100%;
-        height: 40px;
-        margin-top: 10px;
+        height: 30px;
+        margin-top: 5px;
         padding: 0;
         border: 1px solid rgba(33, 33, 33, 0.2);
        
